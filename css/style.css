@@ -1,0 +1,33 @@
+
+a:hover {
+    color: #cc7832;
+    text-decoration: none;
+    transition: all .2s ease
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+#root p>a:link {
+    background-color: #8fb4f8;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+#root p>a:hover {
+    background-color: #5688e4;
+    color: initial;
+    transition: all .5s ease;
+    transition: none;
+}
+
+#root img {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/* header a {
+    text-decoration: underline;
+} */
