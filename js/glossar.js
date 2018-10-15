@@ -193,7 +193,9 @@ a.sum(axis=1)
         term: 'Mean Squared Error (MSE)',
         link: `mean-squared-error-mse`,
         content: /*html*/ `Cost function. Convex for a Linear Regression Models. 
-        $$ MSE(\\textbf{X},h_{\\theta}) = \\frac{1}{m}{\\sum_{i=1}^{m}(Y_i - \\hat{Y}_{i})^2}$$`,
+        $$ MSE(\\textbf{X},h_{\\theta}) = \\frac{1}{m}{\\sum_{i=1}^{m}(\\hat{Y}_{i} - Y_i)^2}$$
+        $$ J(\\theta) = \\frac{1}{m}{\\sum_{i=1}^{m}(h_{\\theta}(x^{(i)}) - y^{(i)})^2}$$
+        `,
         tags: []
     },
     {
@@ -220,7 +222,7 @@ lin_reg = LinearRegression()</code></pre>
         term: 'Batch Gradient Descent',
         link: `batch-gradient-descent`,
         content: /*html*/ `
-        <p>As the name suggest, with batch gradient descent we compute the gradient descent on a batch of data. descent we compute the derivative for multiple var We are computing the <i>partial derivatives</i> for all parameters of $ \\theta $. We basically evaluate how the cost function changes, if we slighlty tweak $ \\theta_j $. $j$ is a dimension within the hyperspace, in which we optimize. Adding up the results for every dimension gives us a weighted direction.</p>
+        <p>As the name suggest, with batch gradient descent we compute the gradient descent on a batch of data. We are computing the <i>partial derivatives</i> for all parameters of $ \\theta $. We basically evaluate how the cost function changes, if we slighlty tweak $ \\theta_j $. $j$ is a dimension within the hyperspace, in which we optimize. Adding up the results for every dimension gives us a weighted direction.</p>
         Partial derivative of the cost function
         $$ \\frac{\\delta}{\\delta\\theta_j}MSE(\\theta) = \\frac{2}{m}{\\sum_{i=1}^{m}(\\theta^T \\cdot \\textbf{x}^{(i)} - y^{(i)}) x_j^{(i)}}$$
         
